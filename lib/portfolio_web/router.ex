@@ -19,6 +19,7 @@ defmodule PortfolioWeb.Router do
 
     get "/", PageController, :index
     get "/projects", ProjectsController, :index
+    get "/posts", PostsController, :index
     get "/posts/:messenger", PostsController, :show
   end
 
