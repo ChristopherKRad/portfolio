@@ -10,7 +10,12 @@ module.exports = {
     '../lib/*_web/**/*.*ex'
   ],
   theme: {
-    extend: {},
+    extend: {
+	fontFamily: {
+	    sans: ['Inter var', ...defaultTheme.fontFamily.sans],
+	    lobster: ['Lobster']
+	}
+    },
   },
   plugins: [
     require('@tailwindcss/forms'),
