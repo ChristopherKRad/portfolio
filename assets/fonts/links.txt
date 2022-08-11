@@ -1,2 +1,3 @@
+https://experimentingwithcode.com/custom-fonts-with-phoenix-and-tailwind/
 https://google-webfonts-helper.herokuapp.com/fonts/lobster?subsets=latin
 https://rsms.me/inter/samples/
