@@ -11,8 +11,7 @@
     <%= csrf_meta_tag() %>
     <%= live_title_tag assigns[:page_title] || "Fonts", suffix: " · Phoenix Framework" %>
     <!-- add these 2 links -->
-    <link phx-track-static rel="stylesheet" href={Routes.static_path(@conn, "/assets/fonts/InterWeb/inter.css")}/>
-    <link phx-track-static rel="stylesheet" href={Routes.static_path(@conn, "/assets/fonts/Lobster/lobster.css")}/>
+    <link phx-track-static rel="stylesheet" href={Routes.static_path(@conn, "/assets/vendor/fonts/InterWeb/Inter_Web/inter.css")}/>
     <link phx-track-static rel="stylesheet" href={Routes.static_path(@conn, "/assets/app.css")}/>
     <!-- update this link -->
     <script defer phx-track-static type="text/javascript" src={Routes.static_path(@conn, "/assets/js/app.js")}></script>
