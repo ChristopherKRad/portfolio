@@ -34,7 +34,7 @@ config :esbuild,
   version: "0.14.29",
   default: [
     args:
-      ~w(js/app.js fonts/InterWeb/inter.css fonts/Lobster/lobster.css --bundle --loader:.woff2=file --loader:.woff=file --target=es2016 --outdir=../priv/static/assets),
+      ~w(js/app.js ../assets/fonts/InterWeb/Inter_Web/inter.css --bundle --loader:.woff2=file --loader:.woff=file --target=es2016 --outdir=../priv/static/assets),
     cd: Path.expand("../assets", __DIR__),
     env: %{"NODE_PATH" => Path.expand("../deps", __DIR__)}
   ]
