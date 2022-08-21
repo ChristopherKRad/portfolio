@@ -45,7 +45,6 @@ defmodule Portfolio.MixProject do
       {:esbuild, "~> 0.4", runtime: Mix.env() == :dev},
       {:swoosh, "~> 1.3"},
       {:tailwind, "~> 0.1", runtime: Mix.env() == :dev},
-      {:dart_sass, "~> 0.5", runtime: Mix.env() == :dev},
       {:telemetry_metrics, "~> 0.6"},
       {:telemetry_poller, "~> 1.0"},
       {:gettext, "~> 0.18"},
