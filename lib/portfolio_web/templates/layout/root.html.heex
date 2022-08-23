@@ -30,10 +30,11 @@
 
           <div class="flex items-center">
             <div class="flex flex-col md:flex-row md:mx-6">
-              <a href="localhost:4000/about" class="my-1 text-sm blue font-medium hover:text-indigo-500 md:mx-4 md:my-0">About</a>
-              <a href="localhost:4000/about" class="my-1 text-sm blue font-medium hover:text-indigo-500 md:mx-4 md:my-0">Experience</a>
-              <a href="https://hexdocs.pm/phoenix/overview.html" class="my-1 text-sm text-gray-700 font-medium hover:text-indigo-500 md:mx-4 md:my-0">Blog</a>
-              <a href="https://hexdocs.pm/phoenix/overview.html" class="my-1 text-sm text-gray-700 font-medium hover:text-indigo-500 md:mx-4 md:my-0">Message</a>
+              <a data-phx-link="redirect" data-phx-line-state="push" href="/" class="my-1 text-sm blue font-medium hover:text-indigo-500 md:mx-4 md:my-0">Home</a>
+              <a data-phx-link="redirect" data-phx-line-state="push" href="/about" class="my-1 text-sm blue font-medium hover:text-indigo-500 md:mx-4 md:my-0">About</a>
+              <a data-phx-link="redirect" data-phx-line-state="push" href="/projects" class="my-1 text-sm blue font-medium hover:text-indigo-500 md:mx-4 md:my-0">Experience</a>
+              <a data-phx-link="redirect" data-phx-line-state="push" href="/posts" class="my-1 text-sm text-gray-700 font-medium hover:text-indigo-500 md:mx-4 md:my-0">Blog</a>
+              <a data-phx-link="redirect" data-phx-line-state="push" href="/message" class="my-1 text-sm text-gray-700 font-medium hover:text-indigo-500 md:mx-4 md:my-0">Message</a>
               <%= if function_exported?(Routes, :live_dashboard_path, 2) do %>
                 <%= link "LiveDashboard", to: Routes.live_dashboard_path(@conn, :home), class: "my-1 text-sm text-gray-700 font-medium hover:text-indigo-500 md:mx-4 md:my-0" %>
               <% end %>
