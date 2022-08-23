@@ -1,4 +1,4 @@
-<div class="grid place-items-center w-screen bg-gray-700">
+<div class="flex place-items-center w-screen bg-gray-700">
   <div class="max-w-7xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:px-8 lg:flex lg:justify-between">
     <div class="max-w-xl px-5">
       <h2 class="text-4xl tracking-tight font-bold text-white sm:text-5xl sm:tracking-tight lg:text-6xl lg:tracking-tight">Christopher K Rad</h2>
@@ -13,12 +13,17 @@
   </div>
 </div>
 
-<main class="container flex space-x-6 justify-center items-center">
+<div class="">
+  <h1>Insert some info here</h1>
+</div>
+
+<main class="flex place-items-center w-screen justify-center items-center h-auto">
 <section id="Orgs" class="px-3 pt-12 pb-0 mx-auto sm:px-6 sm:pt-16 md:max-w-4xl md:pt-20 lg:pt-32 lg:max-w-6xl">
   <div class="bg-grey-200 bg-opacity-25">
   <div class="max-w-7xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:px-8">
-    <div class="lg:grid lg:grid-cols-2 lg:gap-8">
-      <h2 class="max-w-md mx-auto text-3xl tracking-tight font-bold text-gray-600 text-center lg:max-w-xl lg:text-left">Organizations I have worked for</h2>
+    <div class="lg:grid lg:grid-cols-2 lg:gap-72">
+    <div class="lg:grid lg:grid-cols-1 lg:gap-8">
+      <h2 class="max-w-md mx-auto text-3xl tracking-tight font-bold text-gray-600 text-center lg:max-w-xl lg:text-left">Organizations</h2>
       <div class="flow-root self-center mt-8 lg:mt-0">
         <div class="-mt-4 -ml-8 flex flex-wrap justify-between lg:-ml-4">
           <div class="mt-4 ml-8 flex flex-grow flex-shrink-0 justify-center lg:flex-grow-0 lg:ml-4">
@@ -32,6 +37,24 @@
           </div>
         </div>
       </div>
+    </div>
+
+    <div class="lg:grid lg:grid-cols-1 lg:gap-8">
+      <h2 class="max-w-md mx-auto text-3xl tracking-tight font-bold text-gray-600 text-center lg:max-w-xl lg:text-left">Technology</h2>
+      <div class="flow-root self-center mt-8 lg:mt-0">
+        <div class="-mt-4 -ml-8 flex flex-wrap justify-between lg:-ml-4">
+          <div class="mt-4 ml-8 flex flex-grow flex-shrink-0 justify-center lg:flex-grow-0 lg:ml-4">
+            <img class="h-12" src={Routes.static_path(@conn, "/images/logo_nasa.png")} alt="Workcation">
+          </div>
+          <div class="mt-4 ml-8 flex flex-grow flex-shrink-0 justify-center lg:flex-grow-0 lg:ml-4">
+            <img class="h-12" src={Routes.static_path(@conn, "/images/CRA_New.png")} alt="Tuple">
+          </div>
+          <div class="mt-4 ml-8 flex flex-grow flex-shrink-0 justify-center lg:flex-grow-0 lg:ml-4">
+            <img class="h-12" src={Routes.static_path(@conn, "/images/UC_Inn.png")} alt="Level">
+          </div>
+        </div>
+      </div>
+    </div>
     </div>
   </div>
 </div>
