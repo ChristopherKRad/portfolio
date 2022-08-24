@@ -22,6 +22,7 @@ defmodule PortfolioWeb.Router do
     get "/projects", ProjectsController, :index
     get "/posts", PostsController, :index
     get "/posts/:messenger", PostsController, :show
+    get "/message", MessageController, :index
   end
 
   # Other scopes may use custom stacks.
