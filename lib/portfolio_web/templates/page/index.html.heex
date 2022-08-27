@@ -1,9 +1,10 @@
+<!-- NAME / SUMMARY HEADER -->
 <div class="flex place-items-center w-screen bg-gray-700">
   <div class="max-w-7xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:px-8 lg:flex lg:justify-between">
     <div class="max-w-xl px-5">
       <h2 class="text-4xl tracking-tight font-bold text-white sm:text-5xl sm:tracking-tight lg:text-6xl lg:tracking-tight">Christopher K Rad</h2>
-      <h4 class="py-4 text-xl text-gray-300">Engineer | Surfboard Shaper</h4>
-      <p class="mt-5 text-xl text-gray-400">Experienced operations engineeer with a focus in enterprise information systems and web development</p>
+      <h4 class="py-4 text-xl text-gray-300">Enterprise Software Engineer | Surfboard Shaper</h4>
+      <p class="mt-5 text-xl text-gray-400">Experienced supply chain / operations engineeer with a focus in enterprise information systems and web development</p>
     </div>
     <div class="flex flex-wrap justify-center"> <!-- image container -->
       <a class="px-8 py-8 h-8 object-contain inline-block">
@@ -13,87 +14,96 @@
   </div>
 </div>
 
-<div class="">
-  <h1>Insert some info here</h1>
+<!-- CONTACT BUTTON --> 
+<div class="relative h-32 w-96 flex place-items-center w-full items-center justify-center">
+  <div class="absolute right-0">
+    <button type="button" data-phx-link="redirect" data-phx-line-state="push" href="/message" class="inline-flex items-center px-4 py-2 border border-transparent shadow-sm text-base font-medium rounded-md text-white bg-amber-600 hover:bg-amber-700 focus:outline-none">
+      <svg class="-ml-1 mr-3 h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+        <path d="M3 4a2 2 0 00-2 2v1.161l8.441 4.221a1.25 1.25 0 001.118 0L19 7.162V6a2 2 0 00-2-2H3z" />
+        <path d="M19 8.839l-7.77 3.885a2.75 2.75 0 01-2.46 0L1 8.839V14a2 2 0 002 2h14a2 2 0 002-2V8.839z" />
+      </svg>
+      Contact Me
+    </button>
+  </div>
 </div>
 
 <main class="flex place-items-center w-screen justify-center items-center h-auto">
-<section id="Orgs" class="px-3 pt-12 pb-0 mx-auto sm:px-6 sm:pt-16 md:max-w-4xl md:pt-20 lg:pt-32 lg:max-w-6xl">
-  <div class="bg-grey-200 bg-opacity-25">
-  <div class="max-w-7xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:px-8">
-    <div class="lg:grid lg:grid-cols-2 lg:gap-72">
-    <div class="max-w-7xl lg:grid lg:grid-cols-1 lg:gap-7">
-      <h2 class="max-w-md mx-auto text-3xl tracking-tight font-bold text-gray-600 text-center lg:max-w-xl lg:text-left">Organizations</h2>
-      <div class="flow-root self-center mt-8 lg:mt-0">
-        <div class="mt-4  flex flex-wrap justify-between lg:-ml-4">
-          <div class="mt-4  flex flex-grow flex-shrink-0 justify-center lg:flex-grow-0 lg:ml-4">
-            <img class="h-12" src={Routes.static_path(@conn, "/images/logo_nasa.png")} alt="Workcation">
-          </div>
-          <div class="mt-4 ml-8 flex flex-grow flex-shrink-0 justify-center lg:flex-grow-0 lg:ml-4">
-            <img class="h-12" src={Routes.static_path(@conn, "/images/dreamhost-logo-png-transparent.png")} alt="Workcation">
-          </div>
-          <div class="mt-4 ml-8 flex flex-grow flex-shrink-0 justify-center lg:flex-grow-0 lg:ml-4">
-            <img class="h-12" src={Routes.static_path(@conn, "/images/CRA_New.png")} alt="Tuple">
-          </div>
-          <div class="mt-4 ml-8 flex flex-grow flex-shrink-0 justify-center lg:flex-grow-0 lg:ml-4">
-            <img class="h-12" src={Routes.static_path(@conn, "/images/UC_Inn.png")} alt="Level">
-          </div>
-          <div class="mt-4 ml-8 flex flex-grow flex-shrink-0 justify-center lg:flex-grow-0 lg:ml-4">
-            <img class="h-12" src={Routes.static_path(@conn, "/images/USC_Marshall_logo.png")} alt="Level">
-          </div>
-          <div class="mt-4 ml-8 flex flex-grow flex-shrink-0 justify-center lg:flex-grow-0 lg:ml-4">
-            <img class="h-12" src={Routes.static_path(@conn, "/images/jbse.svg")} alt="Level">
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="lg:grid lg:grid-cols-1 lg:gap-8">
-      <h2 class="max-w-md mx-auto text-3xl tracking-tight font-bold text-gray-600 text-center lg:max-w-xl lg:text-left">Technology</h2>
-      <div class="flow-root self-center mt-8 lg:mt-0">
-        <div class="-mt-4 -ml-8 flex flex-wrap justify-between lg:-ml-4">
-
-          <div class="mt-4 ml-8 flex flex-grow flex-shrink-0 justify-center lg:flex-grow-0 lg:ml-4">
-            <img class="h-12" src={Routes.static_path(@conn, "/images/ubuntu-logo.png")} alt="Level">
-          </div>
-          <div class="mt-4 ml-8 flex flex-grow flex-shrink-0 justify-center lg:flex-grow-0 lg:ml-4">
-            <img class="h-12" src={Routes.static_path(@conn, "/images/Git-Logo.png")} alt="git">
-          </div>
-          <div class="mt-4 ml-8 flex flex-grow flex-shrink-0 justify-center lg:flex-grow-0 lg:ml-4">
-            <img class="h-12" src={Routes.static_path(@conn, "/images/lean-six-sigma.png")} alt="Level">
-          </div>
-          <div class="mt-4 ml-8 flex flex-grow flex-shrink-0 justify-center lg:flex-grow-0 lg:ml-4">
-            <img class="h-12" src={Routes.static_path(@conn, "/images/Tailwind_CSS_Logo.png")} alt="Level">
-          </div>
-          <div class="mt-4 ml-8 flex flex-grow flex-shrink-0 justify-center lg:flex-grow-0 lg:ml-4">
-            <img class="h-12" src={Routes.static_path(@conn, "/images/Python-Symbol.png")} alt="Level">
-          </div>
-          <div class="mt-4 ml-8 flex flex-grow flex-shrink-0 justify-center lg:flex-grow-0 lg:ml-4">
-            <img class="h-12" src={Routes.static_path(@conn, "/images/django_icon.png")} alt="Level">
-          </div>
-          <div class="mt-4 ml-8 flex flex-grow flex-shrink-0 justify-center lg:flex-grow-0 lg:ml-4">
-            <img class="h-12" src={Routes.static_path(@conn, "/images/odoo_logo.png")} alt="Level">
-          </div>
-          <div class="mt-4 ml-8 flex flex-grow flex-shrink-0 justify-center lg:flex-grow-0 lg:ml-4">
-            <img class="h-12" src={Routes.static_path(@conn, "/images/elixir_logo.png")} alt="Level">
-          </div>
-          <div class="mt-4 ml-8 flex flex-grow flex-shrink-0 justify-center lg:flex-grow-0 lg:ml-4">
-            <img class="h-12" src={Routes.static_path(@conn, "/images/Postgresql.png")} alt="Level">
-          </div>
-          <div class="mt-4 ml-8 flex flex-grow flex-shrink-0 justify-center lg:flex-grow-0 lg:ml-4">
-            <img class="h-12" src={Routes.static_path(@conn, "/images/MySQL-Logo.png")} alt="Level">
-          </div>
-          <div class="mt-4 ml-8 flex flex-grow flex-shrink-0 justify-center lg:flex-grow-0 lg:ml-4">
-            <img class="h-12" src={Routes.static_path(@conn, "/images/Tableau_Logo.png")} alt="Level">
-          </div>
-          <div class="mt-4 ml-8 flex flex-grow flex-shrink-0 justify-center lg:flex-grow-0 lg:ml-4">
-            <img class="h-12" src={Routes.static_path(@conn, "/images/GCP-logo.png")} alt="gcp">
+  <section id="Orgs" class="px-3 pt-12 pb-0 mx-auto sm:px-6 sm:pt-16 md:max-w-4xl md:pt-20 lg:pt-32 lg:max-w-6xl">
+    <div class="bg-grey-200 bg-opacity-25">
+    <div class="max-w-7xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:px-8">
+      <div class="lg:grid lg:grid-cols-2 lg:gap-72">
+      <div class="max-w-7xl lg:grid lg:grid-cols-1 lg:gap-7">
+        <h2 class="max-w-md mx-auto text-3xl tracking-tight font-bold text-gray-600 text-center lg:max-w-xl lg:text-left">Organizations</h2>
+        <div class="flow-root self-center mt-8 lg:mt-0">
+          <div class="mt-4  flex flex-wrap justify-between lg:-ml-4">
+            <div class="mt-4  flex flex-grow flex-shrink-0 justify-center lg:flex-grow-0 lg:ml-4">
+              <img class="h-12" src={Routes.static_path(@conn, "/images/logo_nasa.png")} alt="Workcation">
+            </div>
+            <div class="mt-4 ml-8 flex flex-grow flex-shrink-0 justify-center lg:flex-grow-0 lg:ml-4">
+              <img class="h-12" src={Routes.static_path(@conn, "/images/dreamhost-logo-png-transparent.png")} alt="Workcation">
+            </div>
+            <div class="mt-4 ml-8 flex flex-grow flex-shrink-0 justify-center lg:flex-grow-0 lg:ml-4">
+              <img class="h-12" src={Routes.static_path(@conn, "/images/CRA_New.png")} alt="Tuple">
+            </div>
+            <div class="mt-4 ml-8 flex flex-grow flex-shrink-0 justify-center lg:flex-grow-0 lg:ml-4">
+              <img class="h-12" src={Routes.static_path(@conn, "/images/UC_Inn.png")} alt="Level">
+            </div>
+            <div class="mt-4 ml-8 flex flex-grow flex-shrink-0 justify-center lg:flex-grow-0 lg:ml-4">
+              <img class="h-12" src={Routes.static_path(@conn, "/images/USC_Marshall_logo.png")} alt="Level">
+            </div>
+            <div class="mt-4 ml-8 flex flex-grow flex-shrink-0 justify-center lg:flex-grow-0 lg:ml-4">
+              <img class="h-12" src={Routes.static_path(@conn, "/images/jbse.svg")} alt="Level">
+            </div>
           </div>
         </div>
       </div>
+
+      <div class="lg:grid lg:grid-cols-1 lg:gap-8">
+        <h2 class="max-w-md mx-auto text-3xl tracking-tight font-bold text-gray-600 text-center lg:max-w-xl lg:text-left">Technology</h2>
+        <div class="flow-root self-center mt-8 lg:mt-0">
+          <div class="-mt-4 -ml-8 flex flex-wrap justify-between lg:-ml-4">
+
+            <div class="mt-4 ml-8 flex flex-grow flex-shrink-0 justify-center lg:flex-grow-0 lg:ml-4">
+              <img class="h-12" src={Routes.static_path(@conn, "/images/ubuntu-logo.png")} alt="Level">
+            </div>
+            <div class="mt-4 ml-8 flex flex-grow flex-shrink-0 justify-center lg:flex-grow-0 lg:ml-4">
+              <img class="h-12" src={Routes.static_path(@conn, "/images/Git-Logo.png")} alt="git">
+            </div>
+            <div class="mt-4 ml-8 flex flex-grow flex-shrink-0 justify-center lg:flex-grow-0 lg:ml-4">
+              <img class="h-12" src={Routes.static_path(@conn, "/images/lean-six-sigma.png")} alt="Level">
+            </div>
+            <div class="mt-4 ml-8 flex flex-grow flex-shrink-0 justify-center lg:flex-grow-0 lg:ml-4">
+              <img class="h-12" src={Routes.static_path(@conn, "/images/Tailwind_CSS_Logo.png")} alt="Level">
+            </div>
+            <div class="mt-4 ml-8 flex flex-grow flex-shrink-0 justify-center lg:flex-grow-0 lg:ml-4">
+              <img class="h-12" src={Routes.static_path(@conn, "/images/Python-Symbol.png")} alt="Level">
+            </div>
+            <div class="mt-4 ml-8 flex flex-grow flex-shrink-0 justify-center lg:flex-grow-0 lg:ml-4">
+              <img class="h-12" src={Routes.static_path(@conn, "/images/django_icon.png")} alt="Level">
+            </div>
+            <div class="mt-4 ml-8 flex flex-grow flex-shrink-0 justify-center lg:flex-grow-0 lg:ml-4">
+              <img class="h-12" src={Routes.static_path(@conn, "/images/odoo_logo.png")} alt="Level">
+            </div>
+            <div class="mt-4 ml-8 flex flex-grow flex-shrink-0 justify-center lg:flex-grow-0 lg:ml-4">
+              <img class="h-12" src={Routes.static_path(@conn, "/images/elixir_logo.png")} alt="Level">
+            </div>
+            <div class="mt-4 ml-8 flex flex-grow flex-shrink-0 justify-center lg:flex-grow-0 lg:ml-4">
+              <img class="h-12" src={Routes.static_path(@conn, "/images/Postgresql.png")} alt="Level">
+            </div>
+            <div class="mt-4 ml-8 flex flex-grow flex-shrink-0 justify-center lg:flex-grow-0 lg:ml-4">
+              <img class="h-12" src={Routes.static_path(@conn, "/images/MySQL-Logo.png")} alt="Level">
+            </div>
+            <div class="mt-4 ml-8 flex flex-grow flex-shrink-0 justify-center lg:flex-grow-0 lg:ml-4">
+              <img class="h-12" src={Routes.static_path(@conn, "/images/Tableau_Logo.png")} alt="Level">
+            </div>
+            <div class="mt-4 ml-8 flex flex-grow flex-shrink-0 justify-center lg:flex-grow-0 lg:ml-4">
+              <img class="h-12" src={Routes.static_path(@conn, "/images/GCP-logo.png")} alt="gcp">
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
     </div>
     </div>
-  </div>
-</div>
-</section>
+  </section>
 </main>
