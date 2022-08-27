@@ -14,6 +14,9 @@ module.exports = {
     '../lib/*_web/**/*.*ex'
   ],
   theme: {
+    container: {
+	max-width = 100%;
+    },
     extend: {
 	fontFamily: {
 	},
