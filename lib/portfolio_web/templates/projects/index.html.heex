@@ -46,7 +46,7 @@
 
       <div class="flex flex-col bg-white rounded-2xl shadow-xl">
         <div class="flex-1 relative pt-16 px-6 pb-8 md:px-8">
-          <div class="absolute top-0 p-5 inline-block bg-indigo-600 rounded-xl shadow-lg transform -translate-y-1/2">
+          <div class="absolute top-0 p-5 inline-block bg-amber-600 rounded-xl shadow-lg transform -translate-y-1/2">
             <!-- Heroicon name: outline/newspaper -->
             <svg class="h-6 w-6 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
               <path stroke-linecap="round" stroke-linejoin="round" d="M12 7.5h1.5m-1.5 3h1.5m-7.5 3h7.5m-7.5 3h7.5m3-9h3.375c.621 0 1.125.504 1.125 1.125V18a2.25 2.25 0 01-2.25 2.25M16.5 7.5V18a2.25 2.25 0 002.25 2.25M16.5 7.5V4.875c0-.621-.504-1.125-1.125-1.125H4.125C3.504 3.75 3 4.254 3 4.875V18a2.25 2.25 0 002.25 2.25h13.5M6 7.5h3v3H6v-3z" />
@@ -56,10 +56,40 @@
           <p class="mt-4 text-base text-gray-500">Depending on your preference I have a single page and full Cirriculum Vitae. Since your here, Im guessing youd prefer the CV.</p>
         </div>
         <div class="p-6 bg-gray-50 rounded-bl-2xl rounded-br-2xl md:px-8">
-        <button type="button" class="inline-flex items-center px-2.5 py-1.5 border border-transparent text-xs font-medium rounded shadow-sm text-white bg-amber-600 hover:bg-amber-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">Single Page</button>
-        <button type="button" class="inline-flex items-center px-2.5 py-1.5 border border-transparent text-xs font-medium rounded shadow-sm text-white bg-amber-600 hover:bg-amber-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">CV</button>
+        <button type="button" class="inline-flex items-center px-2.5 py-1.5 border border-transparent text-xs font-medium rounded shadow-sm text-white bg-amber-600 hover:bg-amber-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">Single Page <span aria-hidden="true"> &darr;</span></button>
+        <button type="button" class="inline-flex items-center px-2.5 py-1.5 border border-transparent text-xs font-medium rounded shadow-sm text-white bg-amber-600 hover:bg-amber-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">CV <span aria-hidden="true"> &darr;</span></button>
         </div>
       </div>
     </div>
   </section>
+</div>
+
+
+<!-- ENT SYS MNGR -->
+<div class="relative bg-white lg:mb-16">
+  <div class="h-56 bg-white sm:h-72 lg:absolute lg:left-0 lg:h-full lg:w-1/2">
+    <img class="w-full h-full object-cover rounded-3xl" src={Routes.static_path(@conn, "/images/cra-office.jpg")} alt="CRA Office">
+  </div>
+  <div class="relative max-w-7xl mx-auto px-4 py-8 sm:py-12 sm:px-6 lg:py-16">
+    <div class="max-w-2xl mx-auto lg:max-w-none lg:mr-0 lg:ml-auto lg:w-1/2 lg:pl-10">
+      <h2 class="mt-6 text-3xl tracking-tight font-bold text-gray-600 sm:text-4xl">Enterprise Systems Engineer</h2>
+      <p class="mt-6 text-lg text-gray-500">California born and raised. I’ve always had an affitnity to water sports, and engineering. Surfing brings me peace and has taught me the value of patience with myself and my projects.</p>
+      <div class="mt-8 overflow-hidden">
+        <dl class="-mx-8 -mt-8 flex flex-wrap">
+          <div class="flex flex-col px-8 pt-8">
+            <dt class="order-2 text-base font-bold text-gray-500">7 years</dt>
+            <dd class="order-1 text-2xl font-bold text-amber-600 sm:text-3xl sm:tracking-tight">Operations</dd>
+          </div>
+          <div class="flex flex-col px-8 pt-8">
+            <dt class="order-2 text-base font-bold text-gray-500">6 years</dt>
+            <dd class="order-1 text-2xl font-bold text-amber-600 sm:text-3xl sm:tracking-tight">Information Systems</dd>
+          </div>
+          <div class="flex flex-col px-8 pt-8">
+            <dt class="order-2 text-base font-bold text-gray-500">7 years</dt>
+            <dd class="order-1 text-2xl font-bold text-amber-600 sm:text-3xl sm:tracking-tight">Infrastructure</dd>
+          </div>
+        </dl>
+      </div>
+    </div>
+  </div>
 </div>
