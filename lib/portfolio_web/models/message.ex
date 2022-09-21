@@ -1,5 +1,7 @@
 defmodule Portfolio.Message do
-  use PortfolioWeb, :model
+  use Ecto.Schema
+  import Ecto.Changeset
+
 
   schema "message" do
     field :first_name, :string
@@ -11,7 +13,7 @@ defmodule Portfolio.Message do
     field :hear, :string
   end
 
-  def changeset(message, params \\ %{}) do
+  def changeset(struct, params \\ %{}) do
     required = ~w(
       first_name
       last_name
