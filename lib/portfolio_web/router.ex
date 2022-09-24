@@ -20,7 +20,6 @@ defmodule PortfolioWeb.Router do
     get "/", PageController, :index
     get "/about", AboutController, :index
     get "/projects", ProjectsController, :index
-    resources "/post", PostController
     get "/message", MessageController, :index
     get "/thankyou", ThanksController, :index
   end
