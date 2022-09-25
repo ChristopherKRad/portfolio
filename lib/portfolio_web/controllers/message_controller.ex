@@ -16,7 +16,7 @@ defmodule PortfolioWeb.MessageController do
 
     case Repo.insert(changeset) do
 
-      {:ok, _topic} ->
+      {:ok, _message} ->
         conn
         |> put_flash(:info, "Message Received")
         |> redirect(to: "/thankyou")
