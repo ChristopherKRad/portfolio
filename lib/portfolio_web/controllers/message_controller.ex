@@ -4,15 +4,17 @@ defmodule PortfolioWeb.MessageController do
   alias Portfolio.Message
   alias Portfolio.Repo
 
-  def index(conn, _params) do
+  def new(conn, _params) do
 
-    render(conn, "index.html")
+    changeset = Message.changeset(%Message{}, %{})
+
+    render(conn, "index.html", changeset: changeset)
 
   end
 
   def create(conn, %{"message" => message}) do
 
-    changeset = Portfolio.changeset(%Message{}, message)
+    changeset = Message.changeset(%Message{}, message)
 
     case Repo.insert(changeset) do
 
