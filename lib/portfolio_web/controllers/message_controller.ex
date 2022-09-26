@@ -23,4 +23,10 @@ defmodule PortfolioWeb.MessageController do
         render(conn, "index.html", changeset: changeset)
     end
   end
+
+  def thankyou(conn, _params) do
+
+    render(conn, "thankyou.html")
+
+  end
 end
