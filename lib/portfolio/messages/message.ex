@@ -2,6 +2,7 @@ defmodule Portfolio.Messages.Message do
   use Ecto.Schema
   import Ecto.Changeset
 
+  #TODO: run migration to change phone_number field from :integer to :string
 
   schema "message" do
     field :first_name, :string
@@ -31,6 +32,7 @@ defmodule Portfolio.Messages.Message do
 
     struct
     |> cast(params, required ++ optional)
+    |> validate_format(:email, ~r/^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$/)
     |> validate_required([:first_name, :last_name, :email])
     |> unique_constraint([:email])
   end
