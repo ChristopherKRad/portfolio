@@ -21,6 +21,7 @@ defmodule PortfolioWeb.Router do
     get "/about", AboutController, :index
     get "/projects", ProjectsController, :index
     get "/message", MessageController, :new
+    get "/message/thankyou", MessageController, :thankyou
     post "/message/thankyou", MessageController, :create
   end
 
