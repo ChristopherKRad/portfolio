@@ -2,22 +2,15 @@
   <!-- Header -->
   <div class="py-24 bg-gray-50 sm:py-32">
     <div class="max-w-md mx-auto pl-4 pr-8 sm:max-w-lg sm:px-6 lg:max-w-7xl lg:px-8">
-      <h1 class="text-4xl leading-10 font-bold tracking-tight text-gray-900 text-center sm:text-5xl sm:tracking-tight sm:leading-none lg:text-6xl lg:tracking-tight">Lets build something new</h1>
-      <p class="mt-6 max-w-3xl mx-auto text-xl leading-normal text-gray-500 text-center"></p>
+      <h1 class="text-4xl leading-10 font-bold tracking-tight text-gray-900 text-center sm:text-5xl sm:tracking-tight sm:leading-none lg:text-6xl lg:tracking-tight rounded-3xl">Lets build something new</h1>
     </div>
   </div>
 
-  <!-- Contact Section -->
-    <!-- Broken Img Tag
-    <div class="lg:inset-0">
-      <div class="lg:inset-y-0 absolute lg:right-0 lg:w-100%">
-        <img class="h-56 w-full object-cover lg:h-full" src={Routes.static_path(@socket, "/images/jpl-pic.jpg")} alt="">
-      </div>
-    </div>
-    -->
-
-  <div class="relative bg-white">
-    <div class="relative py-16 px-4 sm:py-24 sm:px-6 lg:px-8 lg:max-w-7xl lg:mx-auto lg:py-32 lg:grid lg:grid-cols-2">
+<div class="relative bg-white">
+  <div class="h-56 bg-white sm:h-72 lg:absolute lg:right-0 lg:h-full lg:w-1/2">
+    <img class="w-full h-full object-cover rounded-3xl" src={Routes.static_path(@conn, "/images/jpl-pic.jpg")} alt="Perserverence">
+  </div>
+  <div class="relative max-w-7xl mx-auto px-4 py-8 sm:py-12 sm:px-6 lg:py-16">
       <div class="lg:pr-8">
         <div class="max-w-md mx-auto sm:max-w-lg lg:mx-0">
           <h2 class="text-3xl font-bold tracking-tight sm:text-4xl sm:tracking-tight">Happy to Help</h2>
@@ -27,26 +20,26 @@
               <div>
                 <label for="first-name" class="block text-sm font-medium text-gray-700">First name</label>
                 <div class="mt-1">
-                <%= text_input f, :first_name, placeholder: "First Name", class: "form-control block w-full shadow-sm sm:text-sm focus:ring-grape-500 focus:border-grape-500 border-gray-300 rounded-md" %>
+                <%= text_input f, :first_name, class: "form-control block w-full shadow-sm sm:text-sm focus:ring-grape-500 focus:border-grape-500 border-gray-300 rounded-md" %>
                 </div>
               </div>
               <div>
                 <label for="last-name" class="block text-sm font-medium text-gray-700">Last name</label>
                   <div class="mt-1">
-                  <%= text_input f, :last_name, placeholder: "Last Name", class: "form-control block w-full shadow-sm sm:text-sm focus:ring-grape-500 focus:border-grape-500 border-gray-300 rounded-md" %>
+                  <%= text_input f, :last_name, class: "form-control block w-full shadow-sm sm:text-sm focus:ring-grape-500 focus:border-grape-500 border-gray-300 rounded-md" %>
                 </div>
               </div>
               <div class="sm:col-span-2">
                 <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
                   <div class="mt-1">
-                  <%= text_input f, :email, placeholder: "Email", class: "form-control block w-full shadow-sm sm:text-sm focus:ring-grape-500 focus:border-grape-500 border-gray-300 rounded-md" %>
+                  <%= text_input f, :email, class: "form-control block w-full shadow-sm sm:text-sm focus:ring-grape-500 focus:border-grape-500 border-gray-300 rounded-md" %>
                   <%= error_tag f, :email %>
                 </div>
               </div>
               <div class="sm:col-span-2">
                 <label for="company" class="block text-sm font-medium text-gray-700">Company</label>
                 <div class="mt-1">
-                  <%= text_input f, :company, placeholder: "Company", class: "block w-full shadow-sm sm:text-sm focus:ring-grape-500 focus:border-grape-500 border-gray-300 rounded-md" %>
+                  <%= text_input f, :company, class: "block w-full shadow-sm sm:text-sm focus:ring-grape-500 focus:border-grape-500 border-gray-300 rounded-md" %>
                 </div>
               </div>
               <div class="sm:col-span-2">
@@ -55,7 +48,7 @@
                   <span id="phone-description" class="text-sm text-gray-500">Optional</span>
                 </div>
                 <div class="mt-1">
-                  <%= text_input f, :phone_number, placeholder: "Phone Number", class: "block w-full shadow-sm sm:text-sm focus:ring-grape-500 focus:border-grape-500 border-gray-300 rounded-md" %>
+                  <%= text_input f, :phone_number, class: "block w-full shadow-sm sm:text-sm focus:ring-grape-500 focus:border-grape-500 border-gray-300 rounded-md" %>
                 </div>
               </div>
               <div class="sm:col-span-2">
@@ -81,5 +74,6 @@
         </div>
       </div>
   </div>
-  </div>
+</div>
+
 </main>
