@@ -1,4 +1,4 @@
-defmodule Portfolio.Message do
+defmodule Portfolio.Messages.Message do
   use Ecto.Schema
   import Ecto.Changeset
 
@@ -11,6 +11,8 @@ defmodule Portfolio.Message do
     field :phone_number, :integer
     field :help, :string
     field :hear, :string
+
+    timestamps()
   end
 
   def changeset(struct, params \\ %{}) do
@@ -29,8 +31,7 @@ defmodule Portfolio.Message do
 
     struct
     |> cast(params, required ++ optional)
-    |> validate_format(:email, ~r/^([a-zA-Z0-9_\-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([a-zA-Z0-9\-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$/)
-    |> validate_format(:phone_number, ~r/^(\+\d{1,2}\s?)?1?\-?\.?\s?\(?\d{3}\)?[\s.-]?\d{3}[\s.-]?\d{4}$/)
+    |> validate_required([:first_name, :last_name, :email])
     |> unique_constraint([:email])
   end
 end

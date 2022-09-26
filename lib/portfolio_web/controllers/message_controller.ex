@@ -2,7 +2,7 @@ defmodule PortfolioWeb.MessageController do
   use PortfolioWeb, :controller
 
   alias Portfolio.Message
-  alias Portfolio.Repo
+  alias Portfolio.Messages.Message
 
   def new(conn, _params) do
 
@@ -13,19 +13,14 @@ defmodule PortfolioWeb.MessageController do
   end
 
   def create(conn, %{"message" => message}) do
-
-    changeset = Message.changeset(%Message{}, message)
-
-    case Repo.insert(changeset) do
-
-      {:ok, _message} ->
+    case Portfolio.Message.create_message(message) do
+      {:ok, %Message{}} ->
         conn
-        |> put_flash(:info, "Message Received")
-        |> redirect(to: "/thankyou")
+        |> put_flash(:info, "Message Sent!")
+        |> redirect(to: "/message/thankyou")
 
-      {:error, changeset} ->
-        render(conn, "/message", changeset: changeset)
-
+      {:error, %Ecto.Changeset{} = changeset} ->
+        render(conn, "index.html", changeset: changeset)
     end
   end
 end
