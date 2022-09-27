@@ -1,6 +1,7 @@
 defmodule PortfolioWeb.MessageController do
   use PortfolioWeb, :controller
 
+  alias Portfolio.Email
   alias Portfolio.Message
   alias Portfolio.Messages.Message
 
@@ -16,6 +17,8 @@ defmodule PortfolioWeb.MessageController do
     case Portfolio.Message.create_message(message) do
       {:ok, %Message{}} ->
         conn
+        # insert call to Portfolio.Email here and send email
+        # |> new_email(:to, :email)
         |> put_flash(:info, "Message Sent!")
         |> redirect(to: "/message/thankyou")
 
