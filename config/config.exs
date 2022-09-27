@@ -57,14 +57,6 @@ config :tailwind, version: "3.1.6", default: [
   cd: Path.expand("../assets", __DIR__)
 ]
 
-config :portfolio, Portfolio.Mailer,
-  adapter: Bamboo.MandrillAdapter,
-  api_key: "insertapihere",
-  hackney_opts: [
-    recv_timeout: :timer.minutes(1),
-    connect_timeout: :timer.minutes(1)
-  ]
-
 # Import environment specific config. This must remain at the bottom
 # of this file so it overrides the configuration defined above.
 import_config "#{config_env()}.exs"

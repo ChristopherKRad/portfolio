@@ -20,7 +20,7 @@ defmodule Portfolio.MixProject do
   def application do
     [
       mod: {Portfolio.Application, []},
-      extra_applications: [:logger, :bamboo, :runtime_tools]
+      extra_applications: [:logger, :runtime_tools]
     ]
   end
 

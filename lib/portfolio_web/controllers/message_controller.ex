@@ -1,7 +1,6 @@
 defmodule PortfolioWeb.MessageController do
   use PortfolioWeb, :controller
 
-  alias Portfolio.Email
   alias Portfolio.Message
   alias Portfolio.Messages.Message
 
