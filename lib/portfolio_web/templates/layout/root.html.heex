@@ -9,6 +9,7 @@
   <%= live_title_tag assigns[:page_title] || "Chris Rad" %>
   <link phx-track-static rel="stylesheet" href={Routes.static_path(@conn, "/assets/app.css")}/>
   <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.3.5/dist/alpine.min.js" defer></script>
+  <script src="https://unpkg.com/@victoryoalli/alpinejs-screen@1.0.0/dist/screen.min.js" defer></script>
 
   <!-- START BODY -->
   <body class="pt-24 flex flex-col h-full">
@@ -19,15 +20,12 @@
       class="fixed top-0 left-0 right-0 z-30 bg-white shadow "> 
         <div class="container mx-auto px-6 py-3 md:flex md:justify-between md:items-center">
           <div class="flex justify-between items-center">
-            <a class="inline-block" href="/">
-              <img src={Routes.static_path(@conn, "/images/phoenix.png")} class="h-8 object-contain" />
-            </a>
             <!-- Mobile NAV Button -->
             <!-- TODO: Add conditional to hide when non-mobile -->
             <button 
             x-on:click="open = !open"
                 type="button"
-                class="inline-flex items-center md:hidden place-content-end p-2 ml-3 text-sm text-gray-500 rounded-lg hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+                class="inline-flex items-center place-content-end p-2 ml-3 text-sm text-gray-500 rounded-lg hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
             >
               <span class="sr-only">Open main menu</span>
               <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
@@ -41,10 +39,10 @@
           </div>
 
           <!-- MENU ITEMS -->
-          <div class="flex items-center justify-end" id="navbar-default">
+          <div class="flex items-center justify-start" id="navbar-default">
             <div 
-              x-show="!open"
-              class="flex flex-col md:flex-row place-items-end md:mx-6"
+              x-show="open"
+              class="flex flex-col md:flex-row place-items-start md:mx-6"
             >
               <ul class="flex flex-col p-4 mt-4 bg-gray-50 rounded-lg border border-gray-100 md:flex-row place-items-end md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-white dark:bg-gray-800 md:bg-gray-800 dark:border-gray-700">
                 <li><a data-phx-link="redirect" data-phx-line-state="push" href="/" class="my-1 text-sm text-gray-200 font-medium hover:text-indigo-500 md:mx-4 md:my-0">Home</a></li>
