@@ -1,11 +1,11 @@
 <div class="relative bg-white">
-  <div class="h-56 bg-white sm:h-72 lg:absolute lg:left-0 lg:h-auto lg:w-1/2">
+  <div class="h-56 bg-white sm:h-72 lg:absolute lg:left-0 lg:h-full lg:w-1/2">
     <img class="w-full h-full object-cover rounded-3xl" src={Routes.static_path(@conn, "/images/crad-swot1.jpg")} alt="SWOT w Paulino! :)">
   </div>
-  <div class="relative max-w-7xl mx-auto px-4 py-8 sm:py-12 sm:px-6 lg:py-16">
+  <div class="relative max-w-7xl right-0 mb-10 mx-auto px-4 py-8 sm:py-12 sm:px-6 lg:py-56">
     <div class="max-w-2xl mx-auto lg:max-w-none lg:mr-0 lg:ml-auto lg:w-1/2 lg:pl-10">
       <h1 class="mt-6 text-3xl tracking-tight font-bold text-gray-600 sm:text-4xl">Thanks for Reaching Out!</h1>
-      <h6 class="mt-6 text-lg text-gray-500">My work means a lot to me, and so do the people I work with. Our time is limited and I appreciate that you decided to spend some of it learning more about me. I hope together we can make this place more beautiful than we left it. I promise you`ll be sure to hear from me very soon. Until then, I wish you and your loved ones happiness and good health.</h6>
+      <h4 class="mt-6 text-xl text-gray-500">My work means a lot to me, and so do the people I work with. Our time together is limited and I appreciate that you decided to spend some of it learning more about me. I hope together we can make this place more beautiful than we left it. I promise you`ll be sure to hear from me very soon. Until then, I wish you and your loved ones happiness and good health.</h4>
       <p class="mt-6 alert alert-info" role="alert"><%= get_flash(@conn, :info) %></p>
     </div>
   </div>
