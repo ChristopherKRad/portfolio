@@ -24,7 +24,7 @@ import "phoenix_html"
 import {Socket} from "phoenix"
 import {LiveSocket} from "phoenix_live_view"
 // Including Alpine.js
-import 'alpinejs'
+import Alpine from "../vendor/alpine.js"
 
 window.Alpine = Alpine
 Alpine.start()
