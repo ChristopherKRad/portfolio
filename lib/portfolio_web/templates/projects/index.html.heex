@@ -56,8 +56,8 @@
           <p class="mt-4 text-base text-gray-500">Depending on your preference I have a single page and full Cirriculum Vitae. Since your here, Im guessing youd prefer the CV.</p>
         </div>
         <div class="p-6 bg-gray-50 rounded-bl-2xl rounded-br-2xl md:px-8">
-        <button type="button" class="inline-flex items-center px-2.5 py-1.5 border border-transparent text-xs font-medium rounded shadow-sm text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">Single Page Resume <span aria-hidden="true"> &darr;</span></button>
-        <button type="button" class="inline-flex items-center px-2.5 py-1.5 border border-transparent text-xs font-medium rounded shadow-sm text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">Full Resume <span aria-hidden="true"> &darr;</span></button>
+        <button type="button" ><%= link "Single Page Resume", class: "inline-flex items-center px-2.5 py-1.5 border border-transparent text-xs font-medium rounded shadow-sm text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500", to: Routes.static_path(@conn, "/pdfs/CKRAD-Resume-2022(Single).pdf") %></button>
+        <button type="button" ><%= link "Full Resume", class: "inline-flex items-center px-2.5 py-1.5 border border-transparent text-xs font-medium rounded shadow-sm text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500", to: Routes.static_path(@conn, "/pdfs/CKRAD-Resume-2022(Full).pdf") %></button>
         </div>
       </div>
     </div>
