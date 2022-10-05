@@ -41,7 +41,7 @@
           <!-- MENU ITEMS -->
           <div class="flex items-center justify-start" id="navbar-default">
             <div 
-              x-show="open"
+              x-show="window.innerWidth > 767 ? true: open"
               class="flex flex-col md:flex-row place-items-start md:mx-6"
             >
               <ul class="flex flex-col p-4 mt-4 bg-gray-50 rounded-lg border border-gray-100 md:flex-row place-items-end md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-white dark:bg-gray-800 md:bg-gray-800 dark:border-gray-700">
