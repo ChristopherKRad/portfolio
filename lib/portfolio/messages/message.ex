@@ -34,6 +34,6 @@ defmodule Portfolio.Messages.Message do
     |> cast(params, required ++ optional)
     |> validate_format(:email, ~r/^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$/)
     |> validate_required([:first_name, :last_name, :email])
-    |> unique_constraint([:email])
+    |> unique_constraint(:email)
   end
 end
