@@ -50,7 +50,8 @@ defmodule Portfolio.MixProject do
       {:gettext, "~> 0.18"},
       {:jason, "~> 1.2"},
       {:plug_cowboy, "~> 2.5"},
-      {:bamboo, "~> 2.2.0"}
+      {:bamboo, "~> 2.2.0"},
+      {:httpoison, "~> 1.8"}
     ]
   end
 
