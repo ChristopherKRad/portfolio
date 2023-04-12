@@ -14,11 +14,6 @@ defmodule PortfolioWeb.Router do
     plug :accepts, ["json"]
   end
 
-  pipeline :static_assets do
-    plug Phoenix.LiveView.Plug.Static, at: "/js", from: "/assets/js"
-    plug Phoenix.LiveView.Plug.Static, at: "/models", from: "priv/static/models"
-  end
-
   scope "/", PortfolioWeb do
     pipe_through :browser
 
