@@ -1,3 +1,6 @@
+# Ignore environmental variables
+.env
+
 # dev.exs
 config/dev.exs
 
