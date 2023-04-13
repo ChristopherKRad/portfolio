@@ -29,7 +29,9 @@ erl_crash.dump
 portfolio-*.tar
 
 # Ignore assets that are produced by build tools.
-/priv/static/
+/priv/static/images/
+/priv/static/pdfs/
+/priv/static/assets/
 
 # Ignore digested assets cache.
 /priv/static/cache_manifest.json
