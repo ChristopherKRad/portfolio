@@ -2,8 +2,8 @@ import Config
 
 # Configure your database
 config :portfolio, Portfolio.Repo,
-  username: System.get_env("DB_USER"),
-  password: System.get_env("DB_PASS"),
+  username: System.fetch_env!("DB_USER"),
+  password: System.fetch_env!("DB_PASS"),
   hostname: "localhost",
   database: "portfolio_dev",
   stacktrace: true,

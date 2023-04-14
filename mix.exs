@@ -42,7 +42,7 @@ defmodule Portfolio.MixProject do
       {:phoenix_live_view, "~> 0.17.5"},
       {:floki, ">= 0.30.0", only: :test},
       {:phoenix_live_dashboard, "~> 0.6"},
-      {:esbuild, "~> 0.4", runtime: Mix.env() == :dev},
+      {:esbuild, "~> 0.5", runtime: Mix.env() == :dev},
       {:swoosh, "~> 1.3"},
       {:tailwind, "~> 0.1", runtime: Mix.env() == :dev},
       {:telemetry_metrics, "~> 0.6"},
